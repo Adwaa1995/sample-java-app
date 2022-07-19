@@ -27,9 +27,9 @@ pipeline {
         stage('sonar scan'){
             steps {
               sh "mvn clean verify sonar:sonar \
-  -Dsonar.projectKey=assignment-1 \
+  -Dsonar.projectKey=Adwaa-alhosyani \
   -Dsonar.host.url=http://54.226.50.200 \
-  -Dsonar.login=sqp_bf5cbb32094b71c3d0f40839ea93f5b4cf554567"
+  -Dsonar.login=sqp_9018bd54b4334a14753007717ba3052efb14f09b"
             }
         }
 
