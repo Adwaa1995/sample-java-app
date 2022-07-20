@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCESS_KEY_ID     = credentials('class-jenkins-aws-secret-key-id')
-        AWS_SECRET_ACCESS_KEY = credentials('class-jenkins-aws-secret-access-key')
-        ARTIFACT_NAME = 'hello-world.war'
-        AWS_S3_BUCKET = 'jenkins-storage-d3a1'
-        AWS_EB_APP_NAME = 'class-d3a1'
-        AWS_EB_ENVIRONMENT = 'Classd3a1-env'
+        AWS_ACCESS_KEY_ID     = credentials('adwaa-jenkins-aws-secret-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('adwaa-jenkins-aws-secret-access-key')
+        ARTIFACT_NAME = 'hello-Adwaa.war'
+        AWS_S3_BUCKET = 'adwaa-jenkins-d3a1'
+        AWS_EB_APP_NAME = 'adwaa-jenkins-d3a1'
+        AWS_EB_ENVIRONMENT = 'Adwaajenkinsd3a1-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
     } 
     stages {
